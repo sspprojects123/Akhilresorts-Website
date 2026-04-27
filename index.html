@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil Resorts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Akhil Resorts</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Luxury & Nature Together</h2>
+        <p>Experience comfort, peace, and premium hospitality</p>
+        <button onclick="scrollToRooms()">Explore Rooms</button>
+    </div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms" class="section">
+    <h2>Our Rooms</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg">
+            <h3>Deluxe Room</h3>
+            <p>Spacious room with modern amenities and comfort.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg">
+            <h3>Pool View Room</h3>
+            <p>Relax with a beautiful swimming pool view.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg">
+            <h3>Luxury Suite</h3>
+            <p>Premium stay experience with luxury interiors.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Akhil Resorts</h2>
+    <p>
+        Akhil Resorts is your perfect getaway destination. Surrounded by nature,
+        we offer world-class services, comfortable stays, and unforgettable memories.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p>Email: info@akhilresorts.com</p>
+    <p>Phone: +91 7411605179</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Akhil Resorts | All Rights Reserved</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+    function scrollToRooms() {
+        document.getElementById("rooms").scrollIntoView({ behavior: "smooth" });
+    }
+
+    window.addEventListener("scroll", () => {
+        document.querySelector("header").style.background =
+            window.scrollY > 50 ? "#000" : "#2c3e50";
+    });
+</script>
+
+</body>
+</html>
